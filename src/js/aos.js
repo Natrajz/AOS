@@ -166,7 +166,7 @@ const init = function init(settings) {
   /**
    * Handle scroll event to animate elements on scroll
    */
-  let container = document.getElementById('transcroller-body');
+  let container = document.querySelector(".scroll-content");
   container.addEventListener('scroll', throttle(($event) => {
     handleScroll($aosElements, $event,  options.once);
   }, options.throttleDelay));
