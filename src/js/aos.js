@@ -168,6 +168,7 @@ const init = function init(settings) {
    */
   let container = document.querySelector(".scroll-content");
   container.addEventListener('scroll', throttle(($event) => {
+    console.log("event")
     handleScroll($aosElements, $event,  options.once);
   }, options.throttleDelay));
 
